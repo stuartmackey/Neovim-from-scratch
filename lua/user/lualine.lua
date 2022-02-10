@@ -38,8 +38,8 @@ local filetype = {
 }
 
 local branch = {
-	"branch",
-	icons_enabled = true,
+	icons_enabled = false,
+  "branch",
 	icon = "",
 }
 
@@ -78,7 +78,7 @@ lualine.setup({
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
-		lualine_z = { progress },
+		lualine_z = { },
 	},
 	inactive_sections = {
 		lualine_a = {},
