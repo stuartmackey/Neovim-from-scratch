@@ -65,6 +65,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
@@ -77,6 +78,13 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
+
+  -- Autopairs
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+
+  -- Comment
+  use "numToStr/Comment.nvim" -- Easily comment stuff
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
