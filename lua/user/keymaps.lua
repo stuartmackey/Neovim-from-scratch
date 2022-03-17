@@ -39,12 +39,16 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Visual --
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+-- keymap("v", "<", "<gv", opts)
+-- keymap("v", ">", ">gv", opts)
+keymap("v", "<C-h>", "<gv", opts)
+keymap("v", "<C-l>", ">gv", opts)
 
 -- Move text up and down
-keymap('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
-keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
+-- keymap('v', '<A-j>', ":m '>+1<CR>gv=gv", opts)
+-- keymap('v', '<A-k>', ":m '<-2<CR>gv=gv", opts)
+keymap('v', '<C-j>', ":m '>+1<CR>gv=gv", opts)
+keymap('v', '<C-k>', ":m '<-2<CR>gv=gv", opts)
 
 keymap("v", "p", '"_dP', opts)
 
